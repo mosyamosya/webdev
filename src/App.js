@@ -1,25 +1,21 @@
-import './App.css';
-import React, { useState } from 'react';
-import Header from './components/Header.jsx';
-import Body from './components/Body.jsx';
-import Footer from './components/Footer.jsx';
-import ProductList from './components/ProductList.jsx';
+import "./noStyle.css";
+import React, { useContext, useState } from "react";
+import "./App.css";
+import useConsoledState from "./hooks/useConsoledState";
+import Footer from "./components/Footer/Footer.jsx";
+import Body from "./components/Body/Body.jsx";
+import Header from "./components/Header/Header.jsx";
+import ProductDetails from "./components/ProductDetails/ProductDetails.jsx";
+import ProductProvider, {
+  ProductContext,
+} from "./HOC/Providers/ProductProvider";
 
-const initialProducts = [
-  { id: 1, name: 'Product 1', selected: false },
-  { id: 2, name: 'Product 2', selected: false },
-  { id: 3, name: 'Product 3', selected: false },
-  { id: 4, name: 'Product 4', selected: false },
-  { id: 5, name: 'Product 5', selected: false },
-];
 function App() {
-const [products, setProducts] = useState(initialProducts);
   return (
-    <div className="app">
-      <Header />
-      <Body />
-      <ProductList products={products} />
-      <Footer />
+    <div className="App">
+      <div className="content">
+        <Body />
+      </div>
     </div>
   );
 }

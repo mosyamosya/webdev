@@ -1,0 +1,39 @@
+@media (max-width: 768px) { 
+  .title {
+    font-size: 1.5em;
+  }
+}
+
+.main {
+  background-color: #ffffff;
+  color: #333;
+  padding:  0; 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2.65625em; 
+}
+
+.body_container {
+  max-width: 90%; 
+  margin: 0 auto;
+  padding: 0 0.078125em; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.75em; 
+  margin-bottom: 1.25em; 
+  flex: 2;
+}
+
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
